@@ -1,0 +1,22 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.0.0">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>7964392b-9fbb-4067-8bfd-87d7cee8f663</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Aspire\ServiceDefaults\ServiceDefaults.csproj" />
+      <ProjectReference Include="..\WebApi\WebApi.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Application">
+        <HintPath>..\Application\obj\Debug\net8.0\Application.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
